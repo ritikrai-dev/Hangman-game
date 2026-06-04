@@ -6,10 +6,15 @@
   --text-color:#3D3D3D;
   --Loss-color:#E25C5C;
 }
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
+
 *{
   margin:0px;
   padding: 0px;
   background-color: var(--background-color);
+  font-family: 'Poppins', sans-serif;
 }
 .header{
   display: flex;
@@ -34,12 +39,123 @@
   color:var(--text-color);
 }
 
+.play-section{
+  display: flex;
+  justify-content: space-between;
+}
+
 .model{
   justify-content: right;
   align-items: flex-start;
+  margin-top: 150px;
+  margin-left: 70px;
+  
 }
 
 .main-container{
   justify-content: left;
+  margin-top: 220px;
+  margin-right: 290px;
+}
+
+.model-img{
+  height: 450px;
+  width: 400px;
+}
+.button{
+  width: 205px;
+  height: 180px;
+  background-color: var(--Button-color);
+  border: none;
+  border-radius: 50%;
+}
+
+.play{
+  margin-top: 15px;
+  font-size: 60px;
+  margin-left: 45px;
+}
+
+.play-button{
+  margin-top: 12px;
+  margin-left: 12px;
+  height: 75px;
+  width: 75px;
+  background-color: var(--Button-color);
+}
+
+.card{
+  width: 450px;
+  height:550px;
+  background-color:var(--background-color);
+  color: var(--text-color);
+  padding: 24px;
+  margin: 45px auto;
+  border-radius: 50px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1),
+              0 8px 16px rgba(0,0,0,0.1);
+}
+
+.card-header{
+  display: flex;
+  align-items: center;
+  justify-content:space-around;
+  padding-bottom: 20px;
+  margin: 20px 20px;
+}
+.card-logo{
+  width: 67px;
+  background-color:var(--Primary-color);
+  margin-top: 2px;
+  border-radius: 50%;
+  margin-bottom: 2px;
+}
+.card-title{
+  font-size: 30px;
+}
+.H1{
+  font-size: 25px;
+  text-align: center;
+  margin: 20px;
+  font-family: 'Cinzel', serif;
+}
+
+
+
+.card-title{
+  font-family: 'Poppins', serif;
+}
+.Span{
+  display: block;
+  text-align: center;
+  margin: 15px 0;
+  cursor: pointer;
+}
+label{
+  font-size: 20px;
+
+}
+input{
+  width: 100%;
+  height: 45px;
+  border-radius: 10px;
+  background-color: white;
+  border: 1px solid #333;
+  margin-top: 8px;
+  margin-bottom: 16px;
+  padding: 0 12px;
+  box-sizing: border-box;
+}
+
+button{
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  border: none;
+  border-radius: 12px;
+  background: #D4AF37;
+  font-size: 20px;
+  cursor: pointer;
+  margin: 15px auto;
 }
 
