@@ -159,3 +159,39 @@ button{
   margin: 15px auto;
 }
 
+.card-signup{
+  width: 450px;
+  height: 600px;
+  background-color:var(--background-color);
+  color: var(--text-color);
+  padding: 24px;
+  margin: 45px auto;
+  border-radius: 50px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1),
+              0 8px 16px rgba(0,0,0,0.1);
+}
+
+.card-logo-signup{
+  width: 45px;
+  background-color:var(--Primary-color);
+  margin-top: 2px;
+  border-radius: 50%;
+}
+.card-title-signup{
+  font-size: 25px;
+}
+a{
+  text-decoration: none;
+  color:var(--text-color)
+}
+.card-forget{
+  width: 450px;
+  height: 450px;
+  background-color:var(--background-color);
+  color: var(--text-color);
+  padding: 24px;
+  margin: 45px auto;
+  border-radius: 50px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1),
+              0 8px 16px rgba(0,0,0,0.1);
+}
