@@ -1,11 +1,31 @@
 import { Link } from "react-router-dom";
+import React, {useState} from "react";
 
 function Login() {
   const handleSubmit = (e) => {
-    e.preventDefault(); //prevent reload 
-    console.log("Login clicked");
-  };
+    e.preventDefault(); //prevent reload
 
+    if (email.trim() ===''){
+      alert('Email Required');
+      return;
+    }
+    if(password.trim() === ''){
+      alert('Password Required');
+      return;
+    }
+    if(password.length < 6){
+      alert("Password must be at least 6 characters");
+      return;
+    }
+    if (!email.includes("@")) {
+      alert("Please enter a valid email");
+      return;
+    }
+    console.log("submitted")
+  };
+  const [email,setEmail] = useState("");
+  const [password,setPassword] = useState("");
+  
   return (
     <main>
       <div className="card">
@@ -20,16 +40,16 @@ function Login() {
         <form onSubmit={handleSubmit}>
 
           <label>Email Address:</label>
-          <input type="email" required />
+          <input type="email" value={email} onChange={(e)=>setEmail(e.target.value)}/>
 
           <label>Password:</label>
-          <input type="password" required />
+          <input type="password"  value={password} onChange={(e)=>setPassword(e.target.value)}/>
 
           <Link to="/forgot-password" className="Span">
             Forgot Password?
           </Link>
 
-          <button type="submit">
+          <button type="submit" >
             Log In
           </button>
 
