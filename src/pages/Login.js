@@ -1,7 +1,8 @@
-import { Link } from "react-router-dom";
+import { Link ,useNavigate } from "react-router-dom";
 import React, {useState} from "react";
 
 function Login() {
+  const navigate = useNavigate();
   const handleSubmit = (e) => {
     e.preventDefault(); //prevent reload
 
@@ -21,7 +22,9 @@ function Login() {
       alert("Please enter a valid email");
       return;
     }
-    console.log("submitted")
+    console.log("submitted");
+
+    navigate('/game');
   };
   const [email,setEmail] = useState("");
   const [password,setPassword] = useState("");
@@ -58,7 +61,7 @@ function Login() {
         <Link to="/signup">
           <p className="Span">
             Don't have an account?{" "}
-              Sign Up
+              Sign Up 
           </p>
         </Link>
 

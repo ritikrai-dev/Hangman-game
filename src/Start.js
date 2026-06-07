@@ -1,6 +1,9 @@
-import React from 'react'
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 export default function Start() {
+  const navigate = useNavigate();
+
   return (
     <>
     <header className='header'>
@@ -10,8 +13,8 @@ export default function Start() {
     <div className='play-section'>
       <aside className='model'><img src='hangman.png' alt='hangman-model'className='model-img'/></aside>
       <main className='main-container'>
-        <div className='button-container'>
-          <button className='button'  onClick={()=>console.log("Button-Clicked")} ><img src='play-button.png' alt='play-button' className='play-button'/></button>
+        <div className="start-button-container">
+          <button className='button'  onClick={()=>navigate('/play')} ><img src='play-button.png' alt='play-button' className='play-button'/></button>
           <h2 className='play'>Play</h2>
         </div>
       </main>

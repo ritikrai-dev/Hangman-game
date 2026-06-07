@@ -4,6 +4,7 @@ import Login from './pages/Login.js';
 import Start from './Start.js';
 import Signup from "./pages/Signup.js";
 import ForgotPassword from "./pages/ForgotPassword.js"
+import PlayingStage from "./game/PlayingStage.js";
 function App() {
   return (
     <>
@@ -13,6 +14,7 @@ function App() {
         <Route path="/signup" element = {<Signup/>}/>
         <Route path="/forgot-password" element = {<ForgotPassword/>}/>
         <Route path="/game" element={<Start />} />
+        <Route path="/play" element={<PlayingStage/>}/>
       </Routes>
     </BrowserRouter>
     </>
