@@ -321,3 +321,25 @@ a{
   letter-spacing:12px;
   margin-bottom:40px;
 }
+
+/* win - lose */
+.result-card{
+    width:500px;
+    margin:200px 455px;
+    padding:40px;
+    text-align:center;
+    border-radius:20px;
+    background:white;
+    box-shadow:0 4px 15px rgba(0,0,0,0.15);
+}
+
+.result-card h1{
+    font-size:48px;
+    margin-bottom:20px;
+}
+
+.result-card h2{
+    font-size:36px;
+    letter-spacing:5px;
+    margin:20px 0;
+}
